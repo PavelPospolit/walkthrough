@@ -1,14 +1,31 @@
 {
-  "name": "walkthrough",
-  "private": true,
-  "version": "1.0.0",
-  "author": "Pavel",
-  "description": "UI5 Demo App - Walkthrough Tutorial",
-  "scripts": {
-    "start": "ui5 serve",
-    "build": "ui5 build"
-  },
-  "devDependencies": {
-    "@ui5/cli": "^2.0.0"
-  }
+    "name": "walkthrough",
+    "private": true,
+    "version": "1.0.0",
+    "author": "Pavel",
+    "description": "UI5 Demo App - Walkthrough Tutorial",
+    "scripts": {
+        "start": "ui5 serve",
+        "build": "ui5 build"
+    },
+    "devDependencies": {
+        "@ui5/cli": "^2.14.1",
+        "@sap/ux-ui5-tooling": "1",
+        "@sap/ux-ui5-fe-mockserver-middleware": "1",
+        "@sap/ui5-builder-webide-extension": "^1.1.7",
+        "ui5-task-zipper": "^0.3.1",
+        "mbt": "^1.0.15"
+    },
+    "ui5": {
+        "dependencies": [
+            "@sap/ux-ui5-tooling",
+            "@sap/ux-ui5-fe-mockserver-middleware",
+            "@sap/ui5-builder-webide-extension",
+            "ui5-task-zipper",
+            "mbt"
+        ]
+    },
+    "dependencies": {
+        "@openui5/ts-types": "^1.104.0"
+    }
 }
